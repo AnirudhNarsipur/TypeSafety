@@ -100,7 +100,7 @@ theorem partA (e : Exp) (t : Typ) : hasTyp emptyContext e t → Norm e t := sorr
 
 
 
-theorem safe (e : Exp ) (t : Typ) :  hasTyp emptyContext e t → e ⇓ := by
+theorem normalization (e : Exp ) (t : Typ) :  hasTyp emptyContext e t → e ⇓ := by
 intro h
 apply partB e t
 apply partA
